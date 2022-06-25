@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+  <title>Sneakers</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="navbar">
+      <div class="navbar-brand">
+        <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" id="navbutton">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </div>
+        
+        <h1 class="title navbar-item">sneakers</h1>
+        
+        <div class="container" id="logoCartAvatar">
+          
+          <div class="navbar-item">
+            <img src="images/icon-cart.svg" alt="cart" onclick="Cart()">
+            </div>
+            
+            
+          <div class="navbar-item">
+            <img src="images/image-avatar.png" alt="avatar conta">
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="navbar-menu" id="navbarBasicExample">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">
+            Colletions
+          </a>
+          <a class="navbar-item" href="#">
+            Men
+          </a>
+          <a class="navbar-item" href="#">
+            Women
+          </a>
+          <a class="navbar-item" href="#">
+            About
+          </a>
+          <a class="navbar-item" href="#">
+            Contact
+          </a>
+        </div>
+    </nav>
+    
+    
+  </header>
+  <main>
+    <section>
+      <div class="produtos">
+        <div class="produto"><img src="images/image-product-1.jpg" alt="p1" id="img1">
+        </div>
+        <div class="produto"><img src="images/image-product-2.jpg" alt="p2" id="img2">
+        </div>
+        <div class="produto"><img src="images/image-product-3.jpg" alt="p3" id="img3">
+        </div>
+        <div class="produto"><img src="images/image-product-4.jpg" alt="p4" id="img4">
+        </div>
+      </div>
+      
+      
+      
+      <div class="button-container">
+        <div class="botao" id="prev" onclick="Prev()"><</div>
+        <div class="botao" id="next" onclick="Next()">></div>
+      </div>
+      
+    </section>
+    
+    
+    
+    
+    <section class="conteudo">
+      <span>SNEAKER COMPANY</span>
+      
+      <h1>Fall Limited Edition Sneakers</h1>
+      
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole,
+        they’ll withstand everything the
+        weather can offer.</p>
+    
+    
+      <div class="buy-container">
+        <span id="p-desconto">$125.00</span>
+        <span id="desconto">50%</span>
+        <span id="pSem-desconto">$250</span>
+        
+        
+        <div id="quant-produto">
+          <span id="menos" onclick="Menos()">-
+          </span>
+          <span id="quantidade">1</span>
+          <span id="mais" onclick="Mais()">+
+          </span>
+        </div>
+        
+        <div id="adicionar" onclick="adicionar()">
+          Add to cart
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="cart-container">
+      <div id="cart-item">
+              <span id="cart-name">Cart</span>
+              
+              <div id="linha">
+                <img src="images/image-product-1-thumbnail.jpg" alt="item">
+                
+                <span id="infos">Autumn Limited Edition...<br>
+                
+                <span id="calc-total">$125.00 x <span id="quant-item">1</span>
+                <span id="total">$125.00</span>
+                </span>
+                </span>
+              
+                <div id="comprar" onclick="Checkout()">
+                Checkout
+                </div>
+            </div>
+      </div>
+    </section>
+  </main>
+  
+  
+  
+  <script src="main.js"></script>
+</body>
+
+</html>

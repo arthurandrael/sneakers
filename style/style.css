@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Cinzel:wght@400;500;600;700&family=Oswald:wght@200&family=Russo+One&family=Tinos&family=Vollkorn&display=swap');
+
+*{margin: 0; padding: 0;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+#navbar {
+  height: 1rem;
+}
+
+#navbutton {
+  position: absolute;
+  left: 0;
+}
+
+nav h1 {
+  left: 6vh;
+  height: 3.25rem;
+  margin-right: 4rem;
+  font-family: 'Russo One', sans-serif;
+}
+
+#logoCartAvatar {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0.3rem;
+}
+
+input#check {
+  right: -1rem;
+  position: absolute;
+}
+
+#carrinho {
+  z-index: 1;
+}
+
+
+
+/*-------------------------------------*/
+
+
+section div.produtos {
+  display: inline-flex;
+  width: 400vw;
+  height: 20rem;
+  overflow-x: hidden;
+}
+
+section div.produtos > .produto img {
+  width: 100vw;
+  height: 20rem;
+  display: flex;
+}
+
+.button-container {
+  display: flex;
+  position: absolute;
+  margin-top: -12rem;
+}
+
+.botao {
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding-top: 0.14rem;
+}
+
+#next {
+  margin-left: 69vw;
+}
+
+#prev {
+  margin-left: 4vw;
+}
+
+
+
+/*-------------------------------------*/
+
+section.conteudo {
+  margin: 1.5rem;
+}
+
+main span {
+  color: darkorange;
+  font-weight: 550;
+  font-size: 0.85em;
+  letter-spacing: 0.1rem;
+}
+
+main h1 {
+  margin-top: 0.7rem;
+  font-weight: bold;
+  font-size: 1.95em;
+  color: #252525;
+  line-height: 2.2rem;
+}
+
+main p {
+  color: #595959;
+  margin-top: 0.7rem;
+  margin-bottom: 1.3rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+
+
+/*------------------------------------*/
+
+
+.buy-container {
+  font-weight: bold;
+}
+
+#p-desconto {
+  font-size: 1.95em;
+  color: #252525;
+}
+
+#desconto {
+  background-color: #FF7D002E;
+  padding: 0.18rem;
+  font-size: 1em;
+  border-radius: 0.25rem;
+  margin: 0vw 19vw 0vw 5vw;
+}
+
+#pSem-desconto {
+  text-decoration: line-through;
+  color: darkgray;
+  font-size: 1.1em;
+}
+
+.buy-container div {
+  width: 100%;
+  height: 3.8rem;
+  margin: 0.9rem 0rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  font-size: 1em;
+}
+
+#quant-produto {
+  background-color: #F2F3FF9C;
+  padding: 1rem;
+  font-size: 1.15em;
+}
+
+#mais, #menos {
+  position: absolute;
+}
+
+#mais {
+  right: 12%;
+  font-size: 1.35em;
+  top: 45.1rem;
+}
+#menos {
+  left: 12%;
+  font-size: 1.7em;
+  top: 44.8rem;
+}
+
+#adicionar {
+  background-color: darkorange;
+  color: white;
+  padding: 1rem 0rem;
+}
+
+
+
+/*------------------------------------*/
+
+
+
+.cart-container {
+  display: none;
+  width: 95%;
+  height: 43%;
+  background-color: #F6F6F6;
+  border-radius: 5%;
+  position: absolute;
+  top: 4rem;
+  left: 2.5vw;
+  padding: 1.5rem;
+}
+
+span#cart-name {
+  color: #252525;
+  font-size: 1.1em;
+}
+
+#linha {
+  border-top: 0.1rem solid lightgray;
+  width: 95vw;
+  margin-left: -1.5rem;
+  margin-top: 1.1rem;
+  padding: 1.5rem; 
+}
+
+#cart-item  img {
+  width: 18%;
+  border-radius: 6%;
+  
+}
+
+#infos {
+  font-size: 0.85em;
+  letter-spacing: 0.05rem;
+  font-weight: 450;
+  text-align: center;
+  position: absolute;
+  color: gray;
+  padding: 0rem 0.7rem;
+}
+
+#calc-total {
+  margin-left: -12%;
+  font-size: 0.95em;
+  font-weight: 450;
+  color: gray;
+}
+
+#quant-item {
+  color: gray;
+  font-size: 1em;
+  font-weight: 450;
+}
+
+#total {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: black;
+}
+
+#comprar {
+  width: 100%;
+  background-color: darkorange;
+  padding: 1rem;
+  color: white;
+  border-radius: 0.6rem;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1.1rem;
+}
